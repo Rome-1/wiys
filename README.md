@@ -6,26 +6,26 @@ This repository contains the code for the paper "What's In Your Soil? A Citywide
 
 Download R and RStudio from [CRAN (R Project)](https://cran.r-project.org/) and [Posit (RStudio Downloads)](https://posit.co/downloads/), respectively, if not already on your device.
 
-Next, download the data sources listed below. 
+Next, download the data sources listed below. Alternatively, see [Zenodo](https://zenodo.org/records/15725236) for all data and code used in this study. 
 
 Third, go into the R file:
-- Update the root path to the location of this repository
-- Run the commented-out `install.packages` line if you don't have any of the required packages
-- Click 'Run all chunks'
+- Update the root path to the location of this repository.
+- Run the commented-out `install.packages` line if you don't have any of the required packages.
+- Click 'Run all chunks'.
 
 ## Data sources
 
 ### Provided
 
 - Soil lead data with building ages. The sampling and analysis was conducted by us. Building ages were ported over from the Cook County Assessor's Office; the data necessary to replicate this step is not included because it requires precise latitude and longitude data which has been de-identified. 
-- Chicago Community area boundaries geojson. Source: [Chicago Community Area Boundaries GeoJSON](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-Map/cauq-8yn6)
-- Chicago Census tract boundaries geojson. Source: [Chicago Census Tract Boundaries GeoJSON](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Census-Tracts-2010/5jrd-6zik)
-- Industrial Corridors data. Source: [Industrial Corridors Data](https://data.cityofchicago.org/Community-Economic-Development/Boundaries-Industrial-Corridors-current-/e6xh-nr8w) (download as a CSV, change the name to remove the timestamp at the end (IndustrialCorridor_Jan2013.csv) and place the file in the data/landuse folder)
-- Parks data. Source: [Parks Data](https://data.cityofchicago.org/Parks-Recreation/CPD_Parks/ejsh-fztr/about_data) (download as a CSV, change the name to remove the timestamp at the end (CPD_Parks.csv) and place the file in the data/landuse folder)
+- Chicago Community area boundaries geojson. Source: [Chicago Community Area Boundaries GeoJSON](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-Map/cauq-8yn6).
+- Chicago Census tract boundaries geojson. Source: [Chicago Census Tract Boundaries GeoJSON](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Census-Tracts-2010/5jrd-6zik).
+- Industrial Corridors data. Source: [Industrial Corridors Data](https://data.cityofchicago.org/Community-Economic-Development/Boundaries-Industrial-Corridors-current-/e6xh-nr8w) (download as a CSV, change the name to remove the timestamp at the end (`IndustrialCorridor_Jan2013.csv`) and place the file in the data/landuse folder).
+- Parks data. Source: [Parks Data](https://data.cityofchicago.org/Parks-Recreation/CPD_Parks/ejsh-fztr/about_data) (download as a CSV, change the name to remove the timestamp at the end (CPD_Parks.csv) and place the file in the data/landuse folder).
 
 ### Not Provided (Available Upon Request)
 
-To access the Chicago Department of Public Health annual elevated blood Lead level rates by census tract from 1995-2015, submit a request here: [CDPH Data Request Form](https://www.chicago.gov/city/en/depts/cdph/provdrs/health_data_and_reports/svcs/data-request-form.html) 
+To access the Chicago Department of Public Health annual elevated blood Lead level rates by census tract from 1995-2015, submit a request here: [CDPH Data Request Form](https://www.chicago.gov/city/en/depts/cdph/provdrs/health_data_and_reports/svcs/data-request-form.html).
 
 A less complete dataset for 1999 to 2013 (which will require some small configurations to the code) can be found publicly on the Chicago Data Portal here: [Public Health Statistics (1999-2013)](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Screening-for-elevated-bl/v2z5-jyrq/about_data).
 
